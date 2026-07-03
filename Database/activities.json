@@ -1,0 +1,12 @@
+[
+  { "id": 1, "courseId": 1, "title": "CI/CD Pipeline Setup", "type": "Project", "dueDate": "2025-03-15", "estimatedEffort": 4 },
+  { "id": 2, "courseId": 1, "title": "Docker Exam", "type": "Exam", "dueDate": "2025-04-10", "estimatedEffort": 3 },
+  { "id": 3, "courseId": 2, "title": "REST API Assignment", "type": "Homework", "dueDate": "2025-03-20", "estimatedEffort": 3 },
+  { "id": 4, "courseId": 2, "title": "Final Project", "type": "Project", "dueDate": "2025-05-30", "estimatedEffort": 5 },
+  { "id": 5, "courseId": 2, "title": "Midterm", "type": "Exam", "dueDate": "2025-04-05", "estimatedEffort": 4 },
+  { "id": 6, "courseId": 3, "title": "Essay on AI Ethics", "type": "Homework", "dueDate": "2025-03-28", "estimatedEffort": 2 },
+  { "id": 7, "courseId": 3, "title": "Final Essay", "type": "Project", "dueDate": "2025-05-15", "estimatedEffort": 3 },
+  { "id": 8, "courseId": 4, "title": "CSS Layout Quiz", "type": "Quiz", "dueDate": "2025-03-10", "estimatedEffort": 1 },
+  { "id": 9, "courseId": 4, "title": "React Assignment", "type": "Homework", "dueDate": "2025-04-01", "estimatedEffort": 3 },
+  { "id": 10, "courseId": 4, "title": "Final Exam", "type": "Exam", "dueDate": "2025-06-01", "estimatedEffort": 4 }
+] 
