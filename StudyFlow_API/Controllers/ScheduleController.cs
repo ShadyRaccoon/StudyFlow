@@ -24,7 +24,7 @@ public class ScheduleController : ControllerBase
     public async Task<IActionResult> Generate()
     {
         var generated = await _service.GenerateScheduleAsync();
-        return generated  
+        return generated     
             ? Ok("Schedule generated.")
             : Conflict("Schedule already covers the current material.");
     }
