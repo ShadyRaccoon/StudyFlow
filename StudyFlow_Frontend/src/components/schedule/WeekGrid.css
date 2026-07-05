@@ -1,0 +1,80 @@
+.calendar{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+
+    gap:14px;
+    padding:20px;
+}
+
+.corner{
+
+    border-right:1px solid #30363d;
+    border-bottom:1px solid #30363d;
+}
+
+.day-header{
+
+    padding:18px;
+
+    text-align:center;
+
+    font-weight:700;
+
+    color:white;
+
+    border-bottom:1px solid #30363d;
+
+    border-right:1px solid #30363d;
+
+    background:#161b22;
+}
+
+.time-column{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.time-slot{
+
+    height:90px;
+
+    padding-top:6px;
+
+    text-align:center;
+
+    color:#9ca3af;
+
+    border-right:1px solid #30363d;
+
+    border-bottom:1px dashed #30363d;
+
+    font-size:14px;
+}
+
+.day-column{
+
+    padding:12px;
+
+    border-right:1px solid #30363d;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+    min-height:900px;
+}
+
+.empty-day{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#6b7280;
+
+    font-style:italic;
+}
