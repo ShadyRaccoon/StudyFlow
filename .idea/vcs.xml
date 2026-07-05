@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LigaACLabs_Haufe_2026/stack-my-overflow" vcs="Git" />
   </component>
 </project>

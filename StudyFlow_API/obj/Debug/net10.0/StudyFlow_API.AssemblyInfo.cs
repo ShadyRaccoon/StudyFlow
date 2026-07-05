@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("302f62c0-bc5b-43f3-b615-aa15bb5b9baf")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudyFlow_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3f713367c440ca09452d3d17a36e73bc7bdd45a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ad1445cb4f7ed1c4dd77170368081847743becb")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudyFlow_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudyFlow_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

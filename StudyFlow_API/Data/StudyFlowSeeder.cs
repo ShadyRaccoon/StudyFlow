@@ -1,3 +1,6 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
 namespace StudyFlow;
 
 public static class StudyFlowSeeder
@@ -6,7 +9,11 @@ public static class StudyFlowSeeder
     {
         if (context.Courses.Any()) return;
 
-        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true,
+            Converters = { new JsonStringEnumConverter() }
+        };
         var basePath = Path.Combine(Directory.GetCurrentDirectory(), "..", "Database");
 
         var courses = JsonSerializer.Deserialize<List<Course>>(

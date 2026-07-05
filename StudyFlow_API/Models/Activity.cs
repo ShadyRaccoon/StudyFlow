@@ -11,10 +11,10 @@ public class Activity
     public int EstimatedEffort { get; set; }
 }
 
-public enum ActvityType
+public enum ActivityType
 {
     Exam,
     Homework,
     Project,
-    Quizz
+    Quiz
 }
