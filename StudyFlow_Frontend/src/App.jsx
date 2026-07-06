@@ -5,7 +5,7 @@ import Sidebar from "./components/layout/Sidebar";
 import Header from "./components/layout/Header";
 import WeekGrid from "./components/schedule/WeekGrid";
 
-import mockSchedule from "./mockSchedule";
+// import mockSchedule from "./mockSchedule";
 
 import { getProgramSchedule } from "./services/api";
 
@@ -19,17 +19,17 @@ function App() {
       try { 
         // Not working with the API, using mock data for now
         
-        //const data = await getProgramSchedule();
+        const data = await getProgramSchedule();
 
-        //let json = data.generatedJSON
-        //  .replace(/^```json\s*/i, "")
-        //  .replace(/```$/, "");
+        let json = data.generatedJSON
+         .replace(/^```json\s*/i, "")
+         .replace(/```$/, "");
 
-        //const parsedSchedule = JSON.parse(json);
+        const parsedSchedule = JSON.parse(json);
 
-        //setSchedule(parsedSchedule);
+        setSchedule(parsedSchedule);
         // Using mock data
-        setSchedule(mockSchedule);
+        // setSchedule(mockSchedule);
       } catch (err) {
         console.error(err);
         setError("Couldn't load schedule.");
