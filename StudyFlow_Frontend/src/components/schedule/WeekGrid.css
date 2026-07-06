@@ -1,80 +1,102 @@
 .calendar{
     display:grid;
-    grid-template-columns:repeat(7, 1fr);
+    grid-template-columns:80px repeat(7, 1fr);
 
-    gap:14px;
-    padding:20px;
+    grid-template-rows:48px;
+
+    margin:20px;
 }
 
 .corner{
 
-    border-right:1px solid #30363d;
-    border-bottom:1px solid #30363d;
+    border-right:1px solid #2d3748;
+    border-bottom:1px solid #2d3748;
 }
 
 .day-header{
 
-    padding:18px;
+    height:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    text-align:center;
-
+    font-size:18px;
     font-weight:700;
 
-    color:white;
+    border-bottom:1px solid #2d3748;
 
-    border-bottom:1px solid #30363d;
-
-    border-right:1px solid #30363d;
+    border-right:1px solid #2d3748;
 
     background:#161b22;
-}
-
-.time-column{
-
-    display:flex;
-
-    flex-direction:column;
 }
 
 .time-slot{
 
     height:90px;
 
-    padding-top:6px;
+    display:flex;
 
-    text-align:center;
+    justify-content:flex-end;
+
+    align-items:flex-start;
+
+    padding-right:12px;
+    padding-top:6px;
 
     color:#9ca3af;
 
-    border-right:1px solid #30363d;
-
     border-bottom:1px dashed #30363d;
 
-    font-size:14px;
+    background-image:
+    repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 89px,
+        #30363d 90px
+    );
+
 }
 
-.day-column{
+.grid-cell{
+    position:relative;
 
-    padding:12px;
+    border-right:1px solid #2d3748;
+    border-bottom:1px dashed #2d3748;
 
-    border-right:1px solid #30363d;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:14px;
-
-    min-height:900px;
+    padding:4px;
 }
+
 
 .empty-day{
-
-    margin-top:40px;
-
-    text-align:center;
 
     color:#6b7280;
 
     font-style:italic;
+}
+
+.day-column{
+
+    position:relative;
+
+    height:990px;
+
+    border-right:1px solid #30363d;
+
+    background-image:
+        repeating-linear-gradient(
+            to bottom,
+            transparent,
+            transparent 89px,
+            #30363d 90px
+        );
+}
+
+.event-wrapper{
+
+    position:absolute;
+
+    left:5px;
+    right:5px;
+
+    padding:3px;
 }
